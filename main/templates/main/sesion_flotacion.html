@@ -1,0 +1,114 @@
+{% extends 'base_inicio.html' %}
+{% block content %}
+{% load staticfiles %}
+
+	<!-- PAGE TOP -->
+	<hr class="half-margins invisible" />
+	<!-- /PAGE TOP -->
+
+
+
+			<!-- CONTENT -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+						<div class="col-sm-6 col-md-7">
+							<div class="owl-carousel controlls-over product-image" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+								<div>
+									<img alt="" class="img-responsive" src="{% static 'assets/images/demo/portfolio/a1.jpg' %}">
+								</div>
+								<div>
+									<img alt="" class="img-responsive" src="{% static 'assets/images/demo/portfolio/a3.jpg' %}">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-5">
+
+							<h3>Mobile Project</h3>
+							<p>In et massa a massa egestas suscipit tincidunt ut est. Curabitur rutrum faucibus elit, at convallis diam mattis eget. Aliquam scelerisque erat a felis dignissim, a consequat tortor rhoncus. Nullam vulputate nibh at nisi consectetur, nec rutrum nunc iaculis.</p>
+
+
+							<a href="#" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-external-link"></i> Live Preview</a>
+						</div>
+					</div>
+
+					<!-- FEATURED BOXES 3 -->
+					<h3>Nuestras <strong>Reglas</strong></h3>
+					<div class="row featured-box-minimal">
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-group"></i> Customer Support</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-code"></i> HTML5 / CSS3</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-bars"></i> Buttons</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-google-plus"></i> Google Fonts</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-check"></i> Icons</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<h4><i class="fa fa-desktop"></i> Lightbox</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.</p>
+						</div>
+
+					</div>
+					<!-- /FEATURED BOXES 3 -->
+
+					<hr />
+
+					<h3>Totalmente <strong>Higuiénico</strong></h3>
+					<div class="row"><!-- mixed: images and videos -->
+					<div class="col-sm-3 col-md-3">
+						<div class="box-content thumbnail text-center">
+							<a href="{% static 'assets/images/demo/people/12.jpg' %}" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+								<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/12.jpg' %}" alt="" />
+								<h3>
+									<span class="fsize13">Filtro UV</span>
+								</h3>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3">
+						<div class="box-content thumbnail text-center">
+							<a href="{% static 'assets/images/demo/people/12.jpg' %}" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+								<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/12.jpg' %}" alt="" />
+								<h3>
+									<span class="fsize13">Filtro de Cartucho</span>
+								</h3>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3">
+						<div class="box-content thumbnail text-center">
+							<a href="{% static 'assets/images/demo/people/12.jpg' %}" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+								<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/12.jpg' %}" alt="" />
+								<h3>
+									<span class="fsize13">Sal Inerte</span>
+								</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /CONTENT -->
+
+{% endblock content %}
