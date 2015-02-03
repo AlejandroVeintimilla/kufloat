@@ -3,7 +3,7 @@
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
-<!--(src|href)="(assets\/.+?)" -->
+<!--(src|href)="(assets\/.+?)" \1="{% static '\2' %}" -->
 
 	<head>
 		<meta charset="utf-8" />

@@ -27,16 +27,16 @@
 
 						<div class="col-sm-6 col-md-5">
 
-							<h3>Mobile Project</h3>
+							<h3>Proceso</h3>
+
 							<p>In et massa a massa egestas suscipit tincidunt ut est. Curabitur rutrum faucibus elit, at convallis diam mattis eget. Aliquam scelerisque erat a felis dignissim, a consequat tortor rhoncus. Nullam vulputate nibh at nisi consectetur, nec rutrum nunc iaculis.</p>
-
-
-							<a href="#" class="btn btn-primary btn-lg btn-margin-top"><i class="fa fa-external-link"></i> Live Preview</a>
+							
 						</div>
 					</div>
 
 					<!-- FEATURED BOXES 3 -->
-					<h3>Nuestras <strong>Reglas</strong></h3>
+					<br>
+					<h3> Todo lo que <strong> No </strong> vas a estar haciendo</h3>
 					<div class="row featured-box-minimal">
 
 						<div class="col-md-4 col-sm-6 col-xs-12">
@@ -73,11 +73,13 @@
 					</div>
 					<!-- /FEATURED BOXES 3 -->
 
-					<hr />
+					<div class="divider"><!-- divider -->
+						<i class="fa fa-leaf"></i>
+					</div>
 
 					<h3>Totalmente <strong>Higuiénico</strong></h3>
 					<div class="row"><!-- mixed: images and videos -->
-					<div class="col-sm-3 col-md-3">
+					<div class="col-sm-3 col-md-3 col-md-offset-1">
 						<div class="box-content thumbnail text-center">
 							<a href="{% static 'assets/images/demo/people/12.jpg' %}" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
 								<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/12.jpg' %}" alt="" />
@@ -108,7 +110,41 @@
 						</div>
 					</div>
 				</div>
+			
+			<div class="divider"><!-- divider -->
+				<i class="fa fa-flag"></i>
+			</div>
+
+			<!-- CLASSIC TAB NO BG -->
+			<h4>Contraindicaciones</h4>
+			<div class="tabs nomargin-top">
+				<!-- tabs -->
+				<ul class="nav nav-tabs">
+					<li>
+						<a href="#tab1_nobg" data-toggle="tab">
+							<i class="fa fa-heart"></i>
+						</a>
+					</li>
+					<li class = "active">
+						<a href="#tab2_nobg" data-toggle="tab">
+							<i class="fa fa-leaf"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- tabs content -->
+				<div class="tab-content transparent">
+					<div id="tab1_nobg" class="tab-pane">
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.</p>
+					</div>
+
+					<div id="tab2_nobg" class="tab-pane active">
+						<p>Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
 			</section>
 			<!-- /CONTENT -->
+
 
 {% endblock content %}

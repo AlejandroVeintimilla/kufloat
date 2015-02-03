@@ -9,14 +9,14 @@
 
 
 
-<!-- GOOGLE MAP -->
-<div id="gmap"><!-- map container --></div>
+<!-- GOOGLE MAP 
+<div id="gmap"></div>
 <script type="text/javascript">
 	var	$googlemap_latitude 	= -0.213217,
 		$googlemap_longitude	= -78.411298,
 		$googlemap_zoom			= 13;
 </script>
-<!-- /GOOGLE MAP -->
+/GOOGLE MAP -->
 
 
 <!-- CONTENT -->
@@ -25,26 +25,26 @@
 
 		<div class="row">
 
-			<!-- FORM -->
+			<!-- FORM 
 			<div class="col-md-8">
 
 				<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
 
-				<!-- Alert -->
+				Alert 
 				<div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 					<span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
-				</div><!-- /Alert -->
+				</div> /Alert 
 
-				<form id="contactForm" action="php/contact.php" method="post">
+				<form id="contactForm" action="{% url 'main:contacto' %}" method="post">
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-6">
-								<label>Full Name *</label>
+								<label>Nombre Completo *</label>
 								<input required type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="contact_name" id="contact_name">
 							</div>
 							<div class="col-md-6">
-								<label>E-mail Address *</label>
+								<label>E-mail *</label>
 								<input required type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="contact_email" id="contact_email">
 							</div>
 						</div>
@@ -52,33 +52,86 @@
 					<div class="row">
 						<div class="form-group">
 							<div class="col-md-12">
-								<label>Subject</label>
-								<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="contact_subject" id="contact_subject">
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group">
-							<div class="col-md-12">
-								<label>Message *</label>
+								<label>Mensaje *</label>
 								<textarea required maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="contact_comment" id="contact_comment"></textarea>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<input class="hidden" type="text" name="captcha" id="captcha" value="" /><!-- keep it hidden -->
-							<input type="submit" value="Send Message" class="btn btn-primary btn-lg" id="contact_submit" />
+							<input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-lg" id="contact_submit" />
 						</div>
 					</div>
 				</form>
 
+			<hr>
 			</div>
-			<!-- /FORM -->
+			/FORM -->
 
+			<div class="col-md-8">
+			<form id="contactForm" action="{% url 'main:contacto' %}" method="post">
+			{% csrf_token %}
+			{{form_contacto.non_field_errors}}
+			<div class="col-md-6">
+				<div class = "form-group">
+				 	{{form_contacto.nombre_completo.label_tag}}
+					{{form_contacto.nombre_completo}}
+					{{form_contacto.nombre_completo.errors}}
+				</div>
+			</div>
+			<div class = "col-md-6">
+				<div class = "form-group">
+				<label> Email </label>
+					{{form_contacto.email}}
+					{{form_contacto.email.errors}}
+				</div>
+			</div>
+			<div class = "col-md-6">
+				<div class = "form-group">
+				<label> Edad </label>
+					{{form_contacto.edad}}
+					{{form_contacto.edad.errors}}
+				</div>
+			</div>
+			<div class = "col-md-6">
+				<div class = "form-group">
+				<label> Banda Favorita </label>
+					{{form_contacto.banda_favorita}}
+					{{form_contacto.banda_favorita.errors}}
+				</div>
+			</div>
+			<div class = "col-md-6">
+				<div class = "form-group">
+				<label> Fecha </label>
+					{{form_contacto.fecha}}
+					{{form_contacto.fecha.errors}}
+				</div>
+			</div>
+			<div class = "col-md-12">
+				<div class = "form-group">
+					<label> Mensaje </label>
+					{{form_contacto.mensaje}}
+					{{form_contacto.mensaje.errors}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-lg" id="contact_submit" />
+				</div>
+			</div>
+			</form>
+			</div>
 
-			<!-- INFO -->
 			<div class="col-md-4">
+
+			<!-- INFO 
+			{% if lista_ejemplo.0 %}
+				<h3> {{lista_ejemplo.1|lower}} </h3>
+			{% endif %}
+
+			{% for k, v in lista_ejemplo.2.iteritems %}
+				<p> <strong> {{k}} </strong> {{v}} </p>
+			{% endfor %}
 
 				<h2>Visit Us</h2>
 
@@ -86,7 +139,7 @@
 					Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.
 				</p>
 
-				<div class="divider half-margins"><!-- divider --></div>
+				<div class="divider half-margins"></div>
 
 				<p>
 					<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
@@ -94,7 +147,7 @@
 					<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
 				</p>
 
-				<div class="divider half-margins"><!-- divider --></div>
+				<div class="divider half-margins"></div>
 
 				<h4 class="font300">Business Hours</h4>
 				<p>
@@ -102,9 +155,9 @@
 					<span class="block"><strong>Saturday:</strong> 10am to 2pm</span>
 					<span class="block"><strong>Sunday:</strong> Closed</span>
 				</p>
+			 /INFO -->
 
 			</div>
-			<!-- /INFO -->
 
 		</div>
 

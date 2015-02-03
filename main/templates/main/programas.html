@@ -1,135 +1,89 @@
 {% extends 'base_inicio.html' %}
 {% block content %}
 {% load staticfiles %}
-
-	<!-- PAGE TOP -->
-					<hr class="half-margins invisible" />
-	<!-- /PAGE TOP -->
-
-
-
-<section class="row">
+<!-- PAGE TOP -->
+<section class="page-title">
 	<div class="container">
-		
-		<div class="col-md-6">
-			<h3>
-				Concentración & Creatividad
-			</h3>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
-		</div>
+	<hr class="half-margins invisible">
+		<header>
+			<h2><!-- Page Title -->
+				Nuestros <strong>Programas</strong>
+			</h2><!-- /Page Title -->
+		</header>
 
-		<div class="col-md-6">
-			<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_1.jpg' %}" width="555" height="311" alt="">
-				</div>
-				<div>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/23630702" width="800" height="450"></iframe>
-					</div>
-				</div>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_2.jpg' %}" width="555" height="311" alt="">
-				</div>
-			</div>
-		</div>
+	</div>			
+</section>
+<!-- /PAGE TOP -->
+<!-- CONTENT -->
+<section>
+	<div class="container">
+		<div id="portfolio" class="container">
+			<p class="lead">Elige el programa que más se adecúe a tus necesidades y metas. Dale click y aprende todo lo que puedas sobre él. Junto a cada proyecto está el número mínimo de flotaciones recomendadas</p>
 
+			<div class="row">
+
+				<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+					<li class="sotope-item col-sm-6 col-md-4 development"><!-- item -->
+						<div class="item-box">
+							<figure>
+								<a class="item-hover" href="{% url 'main:programa' %}">
+									<span class="overlay color2"></span>
+									<span class="inner">
+										<span class="block fa fa-plus fsize20"></span>
+										Suelta tu <strong>Hippie</strong> Interno
+									</span>
+								</a>
+								<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a1.jpg' %}" width="260" height="260" alt="">
+							</figure>
+							<div class="item-box-desc">
+								<h4>Meditación y relajación profunda</h4>
+								<small class="styleColor">12 Flotaciones</small>
+							</div>
+						</div>
+					</li>
+
+					<li class="sotope-item col-sm-6 col-md-4 photography"><!-- item 2 -->
+						<div class="item-box">
+							<figure>
+								<a class="item-hover lightbox" href="{% url 'main:programa' %}">
+									<span class="overlay color2"></span>
+									<span class="inner">
+										<span class="block fa fa-plus fsize20"></span>
+										Super <strong>Jedi</strong> Yoda
+									</span>
+								</a>
+								<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a2.jpg' %}" width="260" height="260" alt="">
+							</figure>
+							<div class="item-box-desc">
+								<h4>Lucidez en Sueños y Visión</h4>
+								<small class="styleColor">44 Flotaciones</small>
+							</div>
+						</div>
+					</li>
+
+					<li class="sotope-item col-sm-6 col-md-4 design"><!-- item 3 -->
+						<div class="item-box">
+							<figure>
+								<a class="item-hover" href="{% url 'main:programa' %}">
+									<span class="overlay color2"></span>
+									<span class="inner">
+										<span class="block fa fa-plus fsize20"></span>
+										<strong>Gana</strong> las carreras para las que te compraste los zapatos en Marathon Explorer
+									</span>
+								</a>
+								<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a3.jpg' %}" width="260" height="260" alt="">
+							</figure>
+							<div class="item-box-desc">
+								<h4>Aumenta tu desempeño</h4>
+								<small class="styleColor">12 Flotaciones</small>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div><!-- /.masonry-container -->
+		</div>
 	</div>
 </section>
-
-
-<section class="row">
-	<div class="container">
-
-		<div class="col-md-6">
-			<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_1.jpg' %}" width="555" height="311" alt="">
-				</div>
-				<div>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/23630702" width="800" height="450"></iframe>
-					</div>
-				</div>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_2.jpg' %}" width="555" height="311" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-6">
-			<h3>
-				Sueños Lúcidos
-			</h3>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
-		</div>
-	</div>
-</section>
-
-<section class="row">
-	<div class="container">
-
-		<div class="col-md-6">
-			<h3>
-				Dejar la Ansiedad
-			</h3>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
-		</div>
-
-		<div class="col-md-6">
-			<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_1.jpg' %}" width="555" height="311" alt="">
-				</div>
-				<div>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/23630702" width="800" height="450"></iframe>
-					</div>
-				</div>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_2.jpg' %}" width="555" height="311" alt="">
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-
-<section class="row">
-	<div class="container">
-
-		<div class="col-md-6">
-			<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_1.jpg' %}" width="555" height="311" alt="">
-				</div>
-				<div>
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/23630702" width="800" height="450"></iframe>
-					</div>
-				</div>
-				<div>
-					<img class="img-responsive" src="{% static 'assets/images/demo/about_2.jpg' %}" width="555" height="311" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<h3>
-				Sincronización Cerebral
-			</h3>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
-		</div>
-
-	</div>
-</section>
-
-
+<!-- /CONTENT -->
 {% endblock content %}
